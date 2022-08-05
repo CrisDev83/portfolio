@@ -21,6 +21,7 @@ main {
 
 main p {
   text-align: justify;
+  text-indent: 1em;
 }
 
 footer {
@@ -234,7 +235,7 @@ a {
 }
 
 .sobre-mim__descricao {
-  text-indent: 1em;
+  
   text-align: justify;
 }
 
@@ -510,6 +511,11 @@ a {
 
 .projetos__card-button img {
   width: 18px;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: space-between;
 }
 
 .projeto-img {
