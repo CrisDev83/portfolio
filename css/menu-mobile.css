@@ -2,9 +2,19 @@
     display: none;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 700px) {
+
+
     nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 0 5% !important;
+
+    }
+
+    nav a img {
+        background-color: red;
     }
 
     [data-menu="button"] {
@@ -67,4 +77,6 @@
         text-transform: uppercase;
         letter-spacing: 2px;
     }
+
+    
 }
