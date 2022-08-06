@@ -490,7 +490,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10%;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 .projetos__card {
@@ -517,9 +517,6 @@ a {
   margin: 2rem 0;
 }
 
-.flex-footer-card-2 {
-  margin-top:130px;
-}
 
 .projetos__card-button img {
   width: 18px;
