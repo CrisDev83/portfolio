@@ -517,6 +517,16 @@ a {
   margin: 2rem 0;
 }
 
+.link {
+  color:#4863F7;
+  
+}
+
+.link:hover {
+  color:#7084f4;
+  text-decoration: underline;
+}
+
 
 .projetos__card-button img {
   width: 18px;

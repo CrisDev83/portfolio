@@ -13,10 +13,6 @@
 
     }
 
-    nav a img {
-        background-color: red;
-    }
-
     [data-menu="button"] {
         display: block;
         background-color: #151515;
