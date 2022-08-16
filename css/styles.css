@@ -24,6 +24,7 @@ main p {
   text-indent: 1em;
 }
 
+
 footer {
   padding: 2rem 0;
   text-align: center;
@@ -60,6 +61,7 @@ footer span:hover {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
 
 .projetos,
 .sobre-mim {
@@ -131,7 +133,7 @@ nav a img{
 .experiencia,
 .projetos {
   padding: 6.5% 15%;
-  min-height: 35vh;
+  min-height: 30vh;
 }
 
 section h1 {
@@ -487,10 +489,15 @@ a {
 }
 
 .projetos__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10%;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+}
+
+.duplas-projetos{
+  width: 90%;
+  display: flex;
+  column-gap: 100px;
+  margin-bottom: 5em;
+
 }
 
 .projetos__card {
@@ -520,7 +527,7 @@ a {
 .link {
   color:#4863F7;
   
-}
+}grid
 
 .link:hover {
   color:#7084f4;
