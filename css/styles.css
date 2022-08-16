@@ -541,6 +541,7 @@ a {
 
 .flex-button {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -691,6 +692,15 @@ a {
     justify-items: center;
     gap: 5%;
     margin-bottom: 10rem;
+
+  }
+
+  .duplas-projetos{
+    width: 90%;
+    display: block;
+    column-gap: 100px;
+    margin: 0 auto 5em;
+  
   }
 
   .projetos__card-button {
@@ -720,6 +730,7 @@ a {
     width: auto;
     justify-content: space-around;
   }
+
 
   footer {
     font-size: 0.8rem;
