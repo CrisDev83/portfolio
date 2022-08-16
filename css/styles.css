@@ -488,10 +488,6 @@ a {
   }
 }
 
-.projetos__wrapper {
-  margin-bottom: 5rem;
-}
-
 .duplas-projetos{
   width: 90%;
   display: flex;
@@ -691,7 +687,6 @@ a {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 5%;
-    margin-bottom: 10rem;
 
   }
 
@@ -703,8 +698,25 @@ a {
   
   }
 
+  .conteudo-card {
+    margin-bottom: 5rem;
+  }
+
+  .card-img {
+    margin: auto;
+  }
+
+  .projetos__card {
+    margin: 0 auto;
+  }
+
   .projetos__card-button {
     margin: auto;
+  }
+
+
+  .principal__botao-github {
+    margin-top: 0;
   }
 }
 
