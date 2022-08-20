@@ -1,4 +1,61 @@
+@media (min-width: 600px) {
 
+.flex-button {
+  width: 100%;
+  padding: 2rem 0 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+
+
+.flex-button img {
+  width: 1.5rem;
+
+}
+
+
+.botao {
+  width: 10rem;
+  height: 3.2rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 0.6rem 0.8rem;
+  background: #121212;
+  transition: 200ms;
+}
+
+.botao:hover {
+  background: #272727;
+  text-shadow: 1px 1px 3px #00bbc5;
+}
+
+.botao:active {
+  background: #272727;
+  text-shadow: 1px 1px 3px #00bbc5;
+}
+
+
+.github, .contato {
+  display: flex;
+  padding: 0.2rem 0.2rem;
+  border-radius: 8px;
+  background: linear-gradient( 150deg, rgba(210, 64, 116, 1), rgba(101, 24, 180, 1) );
+}
+
+.link-botao, .linkedin, .download {
+  background:linear-gradient( -45deg, rgba(147, 88, 247, 1), rgba(16, 215, 226, 1) );
+  display: flex;
+  padding: 0.2rem 0.2rem;
+  border-radius: 8px;
+}
+
+
+}
 
 .flex-button {
     width: 100%;
