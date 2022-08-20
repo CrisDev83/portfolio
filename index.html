@@ -14,414 +14,369 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 
+   
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/button.css">
+    
   </head>
 
   <body>
 
-    <header>
-      <nav data-menu="suave">
-        <a href="/" >
-          <img src="./assets/logo.png" alt="Imagem representando a logo de cris veira">
-        </a>
-        <button data-menu="button" aria-controls="menu"></button>
-          <ul data-menu="list" id="menu">
-            <a href="#home">
-              <li>Home</li>
-            </a>
-            <a href="#sobre">
-              <li>Sobre</li>
-            </a>
-            <a href="#experiencia">
-              <li>Experiência</li>
-            </a>
-            <a href="#projetos">
-              <li>Projetos</li>
-            </a>
-          </ul>
+    <header id="header">
+      <a href="">
+        <img src="./assets/logo.png" alt="">
+      </a>
+      <nav id="nav">
+        <button id="btn-mobile">
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
+      <section id="home">
 
-      <section class="principal" id="home" >
+        <div class="conteudo">
+          <div id="home-esquerda">
+            <div class="home-texto">
+              <h1>Olá, eu sou</h1>
+              <div class="home-animacao">
+                <span class="home-nome">CRIS VIEIRA</span>
+                <span class="home-cursor"></span>
+              </div>
+              <h1>Desenvolvedor front-end</h1>
+            </div>
+            
 
-        <div class="principal__left">
-
-          <h1>Olá, eu sou</h1>
-            <span class="principal__sentence"></span>
-            <span class="principal__input-cursor"></span>
-          <h1>Desenvolvedor Front-End</h1>
-
-          <div class="principal__botao">
-
-            <a href="#" target="_blank">
-              <div class="principal__botao-linkedin">
-                <img src="./assets/linkedin.png" alt="" />
+          </div>
+          <div class="flex-button">
+            <a href="" class="linkedin">
+              <div class="botao">
+                <img src="./assets/linkedin.png" alt="">
                 <p>LinkedIn</p>
               </div>
             </a>
-
-            <a href="https://github.com/CrisDev83?tab=repositories" target="_blank">
-              <div class="principal__botao-github">
-                <img src="./assets/github.png" alt="" />
-                <p>Github</p>
-              </div>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="principal__right">
-          <img src="./assets/developer.svg" alt="Ilustração representando uma desenvolvedora sentada na cadeira mexendo no notebook com ambiente em volta." data-tilt>
-        </div>
-        
-        <div class="scroll" data-menu="suave">
-          <a href="#sobre" > 
-            <p> scroll down </p> 
-            <img src="./assets/scroll.png" alt="Setinha indicando para rolar a tela para baixo">
-          </a>
-        </div>
-
-      </section>
-
-      <section class="sobre-mim" id="sobre" data-anime="js-scroll">
-
-        <div class="sobre-mim__foto">
-          <img src="./assets/family.jpg" alt="Foto com o que tenho de mais valioso - Minha Família" />
-        </div>
-
-        <div class="sobre-mim__descricao" >
-          <h1>Sobre mim</h1>
-          <h2>Brusque, Santa Catarina</h2>
-          <p>
-            Prazer sou Cristhian Vieria. Sou casado, morador de Santa Catarina, pai da Ana Gabriela ('ela que pediu pra escrever isso. rsrsr'), e amo minha família. Passei por um processo de mudança, de cidade, de mentalidade, de crenças e de carreira. Após 12 anos como músico e educador-social. Desafiei-me a tornar-me o melhor programador que posso ser.
-          </p>
-          <p>
-            Sempre fui apaixanado por tecnologia, sou da geração que viu nascer os primeiros games, computadores e sonhava em trabalhar na área. O primeiro curso que fiz, foi de MS-DOS('pois é faz tempo...rsrsr'). Porém outra paixão entrou na minha vida, a música, e fiz a minha escolha. Hoje reencontrei o gosto pela tecnologia. Estudo programação autodidaticamente através de cursos online a 3 anos. Venho também desenvolvendo alguns projetos como freelancer e dando "vida" para idéias próprias de aplicações que a muito tempo estavam guardadas. 
-          </p>
-          
-          <div class="sobre-mim__descricao-buttons">
-            <a href="#" download="">
-              <div class="sobre-mim__descricao-buttons-curriculo">
-                <img src="./assets/download-da-nuvem.png" alt="" />
-                <p>Currículo</p>
-              </div>
-            </a>
-            <a
-              href="#"
-              target="_blank"
-            >
-              <div class="sobre-mim__descricao-buttons-email">
-                <img src="./assets/whatsapp.png" alt="" />
+            <a href="" class="github">
+              <div class="botao">
+                <img src="./assets/github.png" alt="">
                 <p>Contato</p>
               </div>
             </a>
           </div>
+          <div id="home-direita">
+            <img src="./assets/developer.svg" alt="">
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="" class="link-scroll">
+            <p>scroll down</p>
+            <img src="./assets/scroll.png" alt="">
+          </a>
+        </div>
+       
+      </section>
+
+      <section id="sobre">
+        <div class="conteudo">
+          <div class="sobre-esquerda">
           
+              <div class="sobre-foto">
+                <img src="./assets/family.jpg" alt="" class="foto">
+              </div>
+       
+          </div>
+          <div class="flex-button">
+            <a href="" class="download">
+              <div class="botao">
+                <img src="./assets/download-da-nuvem.png" alt="">
+                <p>Currículo</p>
+              </div>
+            </a>
+            <a href="" class="contato">
+              <div class="botao">
+                <img src="./assets/whatsapp.png" alt="">
+                <p>Contato</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="sobre-direita">
+    
+              <h1>sobre mim</h1>
+              <h2>Brusque, Santa Catarina</h2>
+              <p>Prazer sou Cristhian Vieria. Sou casado, morador de Santa Catarina, pai da Ana Gabriela ('ela que pediu pra escrever isso. rsrsr'), e amo minha família. Passei por um processo de mudança, de cidade, de mentalidade, de crenças e de carreira. Após 12 anos como músico e educador-social. Desafiei-me a tornar-me o melhor programador que posso ser.
+              </p>
+              <p>Sempre fui apaixanado por tecnologia, sou da geração que viu nascer os primeiros games, computadores e sonhava em trabalhar na área. O primeiro curso que fiz, foi de MS-DOS('pois é faz tempo...rsrsr'). Porém outra paixão entrou na minha vida, a música, e fiz a minha escolha. Hoje reencontrei o gosto pela tecnologia. Estudo programação autodidaticamente através de cursos online a 3 anos. Venho também desenvolvendo alguns projetos como freelancer e dando "vida" para idéias próprias de aplicações que a muito tempo estavam guardadas. 
+              </p>
+      
+          </div>
+         
         </div>
       </section>
 
-      <section class="experiencia" id="experiencia" data-anime="js-scroll">
-        <h1>Experiência</h1>
-        <div class="experiencia__wrapper">
-          <section class="experiencia__lugares">
-            <ul data-tab="menu">
-              <li>&#128064&#128064</li>
-              <li>Casa Verde</li>
-              <li>Musicart</li>
-            </ul>
-          </section>
-
-          <div class="experiencia__descricao" data-tab="content">
-            <section data-anime="show-right">
-              <h2>Em busca da minha primeira experiência "oficial" :)</h2>
-              <p class="experiencia__descricao-local">Quem sabe na sua empresa?</p>
-              <p class="colorFone">Estou disponível para bater um papo, você pode entrar em contato via whatsapp: <a href="" class="link">(47) 99254-1243</a> ou via e-mail: <a href="" class="link">cristhian.dev83@gmail.com</a> &#10024</p>
-            </section>
-            <section data-anime="show-right">
-            <h2>Desenvolvedor Front-End</h2>
-            <span>Ago 2022 - Atual</span>
-            <p class="experiencia__descricao-local">Casa Verde Preservação Compartilhada - Projeto Freelancer</p>
-            <p>
+      <section id="experiencia">
+        <h1>experiência</h1>
+        <div class="conteudo">
+          <div class="experiencia-esquerda">
+            <article class="lugares">
+              <ul>
+                <li>&#128064&#128064</li>
+                <li>Casa Verde</li>
+                <li>Musicart</li>
+              </ul>
+            </article>
+          </div>
+          <div class="experiencia-direita">
+            <article class="descricao">
+                <h2>Em busca da minha primeira experiência "oficial" :)</h2>
+                <p class="link">Quem sabe na sua empresa?</p>
+                <p class="colorFone">Estou disponível para bater um papo, você pode entrar em contato via whatsapp: <a href="" class="link">(47) 99254-1243</a> ou via e-mail: <a href="" class="link">cristhian.dev83@gmail.com</a> &#10024</p>
+            </article>
+            <article class="descricao">
+              <h2>Desenvolvedor Front-End</h2>
+              <span>Maio 2022 - Atual</span>
+              <p class="link">Casa Verde Preservação Compartilhada - Projeto Freelancer</p>
+              <p>
               Minha primeira oportunidade na área da tecnologia. É uma StartUp disruptiva ('adoro idéias disruptivas...') que tem uma visão inovadora a respeito da preservação. Gostei tanto da idéia que aceitei trabalhar sem remunerçao em troca de equity quando o projeto for lançado. Sou responsável pelo Front-end da aplicação desenlvolvido em ReactJS, assim como a integração com o Back-end. Projeto esta em fase final de desenvolvimento.
-            </p>
-          </section>
-          <section data-anime="show-right">
-            <h2>Educador Musical</h2>
-            <span>Mar 2011 - Jul 2019</span>
-            <p class="experiencia__descricao-local">Programa Musicart e Cidadania</p>
-            <p>
-              Foi uma fase muito feliz. O Musicart era um projeto social que usava a música como ferramenta de iclusão para crianças e familias em situação de vulnerabilidade social. É muito bom poder servir as pessoas. Fiz grandes amigos, me deu oportunidade de tocar com músicos fantásticos e pessoas maravilhosas. O Musicart tinha um modelo de gestão muito interessante era totalmente colaborativo e todos tinham responsabilidade pelo projeto. Faziamos desde matrículas, toda a parte pedagogica e organização dos eventos. Tudo era feito em equipe e focado no resultado. A música nesse aspecto é bem parecido com programação o resultado é: "ou toca ou não toca". Ou funciona ou não funciona. Como diria Linus Torvalds:
-              <blockquote>"Falar é fácil, me mostre o código!"</blockquote>
-            </p>
-          </section>
+              </p>
+            </article>
+            <article class="descricao">
+              <h2>Educador Musical</h2>
+              <span>Mar 2011 - Jul 2019</span>
+              <p class="link">Programa Musicart e Cidadania</p>
+              <p>
+                Foi uma fase muito feliz. O Musicart era um projeto social que usava a música como ferramenta de iclusão para crianças e familias em situação de vulnerabilidade social. É muito bom poder servir as pessoas. Fiz grandes amigos, me deu oportunidade de tocar com músicos fantásticos e pessoas maravilhosas. O Musicart tinha um modelo de gestão muito interessante era totalmente colaborativo e todos tinham responsabilidade pelo projeto. Faziamos desde matrículas, toda a parte pedagogica e organização dos eventos. Tudo era feito em equipe e focado no resultado. A música nesse aspecto é bem parecido com programação o resultado é: "ou toca ou não toca". Ou funciona ou não funciona. Como diria Linus Torvalds:
+                <blockquote>"Falar é fácil, me mostre o código!"</blockquote>
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="projetos" id="projetos" data-anime="js-scroll">
+      <section id="projetos">
 
         <h1>Projetos</h1>
 
-        <div class="projetos__wrapper">
+        <div class="conteudo-projetos">
 
           <div class="duplas-projetos">
-            <div class="conteudo-card">
-              <div id="projeto-proffy" class="projetos__card">
+
+            <div class="conteudo-card" id="proffy">
+              <div class="projeto-card">
                 <div class="card-img">
-                  <a href="https://gorgeous-sfogliatella-6ecdaf.netlify.app/" target="_blank">
-                    <img src="./assets/proffy.png" alt="Imagem representando meu projeto novo" class="projeto-img"/>
+                  <a href="">
+                    <img src="./assets/proffy.png" alt="">
                   </a>
-              
                 </div>
                 <h2>Projeto Proffy</h2>
-              
-                <div class="card-flex">
-                  <div class="card-text">
-                    <p>
-                       Projeto feito no primeiro NLW#1 (Next Level Week) da Rocketseat que é uma das maiores plataformas de educação em tecnologia da atualidade. Totalmente responsivo. Participei das duas trilhas deste treinamento a Start (iniciante) e a Booster (avançado). Ao visualizar este projeto encontrará uma versão somente com o Front-end, mas se quiser ver o código completo com banco de dados. É só ir para o diretorio no GitHub. Se preferir a versão completa da API Restfull em Desenvolvida em ReactJS e NodeJS é só <a href="" class="link">CLICAR AQUI</a>.
-                    </p>
+              </div>
+              <div class="card-texto">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
+              </div>
+              <div class="card-footer">
+                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
+               
+              </div>
+              <div class="flex-button">
+                <a href="" class="link-botao">
+                  <div class="botao">
+                    <img src="./assets/link.png" alt="">
+                    <p>Visualizar</p>
                   </div>
-                  <div class="card-footer proffy">
-                    <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
-                      <div class="flex-button">
-                        <a href="https://gorgeous-sfogliatella-6ecdaf.netlify.app/" target="_blank"
-                          >
-                          <div class="projetos__card-button">
-                            <img src="./assets/link.png" alt="">
-                          Visualizar
-                          </div>
-                        </a>
-                        <a href="#" target="_blank"
-                          >
-                          <div class="principal__botao-github">
-                            <img src="./assets/github.png" alt="" />
-                            <p>Github</p>
-                          </div>
-                        </a>
-                      </div>
+                </a>
+                <a href="" class="github">
+                  <div class="botao">
+                    <img src="./assets/github.png" alt="">
+                    <p>Contato</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
 
-            <div class="conteudo-card">
-              <div id="projeto-ecoleta" class="projetos__card">
+            <div class="conteudo-card" id="ecoleta">
+              <div class="projeto-card">
                 <div class="card-img">
-                  <a href="https://gleaming-brigadeiros-fda93f.netlify.app" target="_blank">
-                    <img src="./assets/ecoleta.png" alt="Imagem representando meu projeto novo" class="projeto-img"/>
+                  <a href="">
+                    <img src="./assets/ecoleta.png" alt="">
                   </a>
-              
                 </div>
                 <h2>Projeto Ecoleta</h2>
-              
-                <div class="card-flex">
-                  <div class="card-text">
-                    <p>
-                       Projeto feito no primeiro NLW#1 (Next Level Week) da Rocketseat que é uma das maiores plataformas de educação em tecnologia da atualidade. Participei das duas trilhas deste treinamento a Start (iniciante) e a Booster (avançado). Ao visualizar este projeto encontrará uma versão somente com o Front-end, mas se quiser ver o código completo com banco de dados. É só ir para o diretorio no GitHub. Se preferir a versão completa da API Restfull em Desenvolvida em ReactJS e NodeJS é só <a href="" class="link">CLICAR AQUI</a>.
-                    </p>
+              </div>
+              <div class="card-texto">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
+              </div>
+              <div class="card-footer">
+                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
+               
+              </div>
+              <div class="flex-button">
+                <a href="" class="link-botao">
+                  <div class="botao">
+                    <img src="./assets/link.png" alt="">
+                    <p>Contato</p>
                   </div>
-                  <div class="card-footer">
-                    <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
-                      <div class="flex-button">
-                        <a href="https://gleaming-brigadeiros-fda93f.netlify.app" target="_blank"
-                          >
-                          <div class="projetos__card-button">
-                            <img src="./assets/link.png" alt="">
-                          Visualizar
-                          </div>
-                        </a>
-                        <a href="#" target="_blank"
-                          >
-                          <div class="principal__botao-github">
-                            <img src="./assets/github.png" alt="" />
-                            <p>Github</p>
-                          </div>
-                        </a>
-                      </div>
+                </a>
+                <a href="" class="github">
+                  <div class="botao">
+                    <img src="./assets/github.png" alt="">
+                    <p>Contato</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
 
-          </div>
+          </div>  
 
           <div class="duplas-projetos">
-            <div class="conteudo-card">
-              <div id="projeto-cordel" class="projetos__card">
+            <div class="conteudo-card" id="cordel">
+              <div class="projeto-card">
                 <div class="card-img">
-                  <a href="https://crisdev83.github.io/projetoCordel/" target="_blank">
-                    <img src="./assets/cordel.png" alt="Imagem representando projeto cordel" class="projeto-img"/>
+                  <a href="">
+                    <img src="./assets/cordel.png" alt="">
                   </a>
                 </div>
                 <h2>Projeto Cordel</h2>
-                <div class="card-flex">
-                  <div class="card-text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quisquam, ab, saepe eaque placeat iure dolore illum dolores amet pariatur laboriosam magnam nostrum natus. Dolorum nisi assumenda voluptates dolor voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus neque doloribus, qui tempore ex suscipit quae rem quod non doloremque magnam reiciendis mollitia sint aspernatur distinctio iusto dolorem fugit quis! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-              
-                  <div class="card-footer">
-                    <span>Tecnologias usadas no projeto: HTML5, CSS3.</span>
-                      <div class="flex-button">
-                        <a href="https://crisdev83.github.io/projetoCordel/" target="_blank"
-                          >
-                          <div class="projetos__card-button">
-                            <img src="./assets/link.png" alt="">
-                          Visualizar
-                          </div>
-                        </a>
-                        <a href="https://github.com/CrisDev83/projetoCordel.git" target="_blank"
-                          >
-                          <div class="principal__botao-github">
-                            <img src="./assets/github.png" alt="" />
-                            <p>Github</p>
-                          </div>
-                        </a>
-                      </div>
-                  </div>
-                </div>
               </div>
-            </div>
-  
-            <div id="projeto-flappy" class="projetos__card">
-              <div class="card-img">
-                <a href="https://crisdev83.github.io/projetoCordel/" target="_blank">
-                  <img src="./assets/flappy.png" alt="Imagem representando projeto cordel" class="projeto-img"/>
+              <div class="card-texto">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
+              </div>
+              <div class="card-footer">
+                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
+               
+              </div>
+              <div class="flex-button">
+                <a href="" class="link-botao">
+                  <div class="botao">
+                    <img src="./assets/link.png" alt="">
+                    <p>Contato</p>
+                  </div>
+                </a>
+                <a href="" class="github">
+                  <div class="botao">
+                    <img src="./assets/github.png" alt="">
+                    <p>Contato</p>
+                  </div>
                 </a>
               </div>
-              <h2>Jogo Flappy-Bird</h2>
-  
-              <div class="card-flex">
-                <div class="card-text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quisquam, ab, saepe eaque placeat iure dolore illum dolores amet pariatur laboriosam magnam nostrum natus. Dolorum nisi assumenda voluptates dolor voluptatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus neque doloribus, qui tempore ex suscipit quae rem quod non doloremque magnam reiciendis mollitia sint aspernatur distinctio iusto dolorem fugit quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  
-                  </p>
+            </div>
+
+            <div class="conteudo-card" id="flap">
+              <div class="projeto-card">
+                <div class="card-img">
+                  <a href="">
+                    <img src="./assets/flappy.png" alt="">
+                  </a>
                 </div>
-  
-              
-                <div class="card-footer">
-                  <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
-                    <div class="flex-button">
-                      <a href="https://crisdev83.github.io/projetoCordel/" target="_blank"
-                        >
-                        <div class="projetos__card-button">
-                          <img src="./assets/link.png" alt="">
-                        Visualizar
-                        </div>
-                      </a>
-                      <a href="https://github.com/CrisDev83/projetoCordel.git" target="_blank"
-                        >
-                        <div class="principal__botao-github">
-                          <img src="./assets/github.png" alt="" />
-                          <p>Github</p>
-                        </div>
-                      </a>
-                    </div>
-                </div>
+                <h2>Jogo Flap-Bird
               </div>
-  
+              <div class="card-texto">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
+              </div>
+              <div class="card-footer">
+                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
+               
+              </div>
+              <div class="flex-button">
+                <a href="" class="link-botao">
+                  <div class="botao">
+                    <img src="./assets/link.png" alt="">
+                    <p>Contato</p>
+                  </div>
+                </a>
+                <a href="" class="github">
+                  <div class="botao">
+                    <img src="./assets/github.png" alt="">
+                    <p>Contato</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="duplas-projetos">
 
-            <div class="conteudo-card">
-              <div id="projeto-android" class="projetos__card">
+            <div class="conteudo-card" id="android">
+              <div class="projeto-card">
                 <div class="card-img">
-                  <a href="#" target="_blank">
-                    <img src="./assets/android.jpg" alt="Imagem representando meu projeto número 1" class="projeto-img"/>
+                  <a href="">
+                    <img src="./assets/android.jpg" alt="">
                   </a>
                 </div>
-                <h2>Projeto Android</h2>
-                <div class="card-flex">
-                  <div class="card-text">
-                    <p>
-                      Projeto desenvolvido a partir do Curso de HTML E CSS (versão 2021) do Curso em Vídeo, é uma atualização que o professor Guanabara fez do antigo curso. O foco geralmente não é tanto no design mas em utilizar o maior número de conceitos em exemplos simples. Mais informações acesse o portfólio no GitHub clicando no botão abaixo.
-                    </p>
+                <h2>Projeto Android
+              </div>
+              <div class="card-texto">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
+              </div>
+              <div class="card-footer">
+                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
+               
+              </div>
+              <div class="flex-button">
+                <a href="" class="link-botao">
+                  <div class="botao">
+                    <img src="./assets/link.png" alt="">
+                    <p>Contato</p>
                   </div>
-              
-                  <div class="card-footer">
-                    <span>Tecnologias usadas no projeto: HTML5, CSS3.</span>
-                      <div class="flex-button">
-                        <a href="https://crisdev83.github.io/projetoAndroid/" target="_blank"
-                          >
-                          <div class="projetos__card-button">
-                            <img src="./assets/link.png" alt="">
-                          Visualizar
-                          </div>
-                        </a>
-                        <a href="https://github.com/CrisDev83/projetoAndroid.git" target="_blank"
-                          >
-                          <div class="principal__botao-github">
-                            <img src="./assets/github.png" alt="" />
-                            <p>Github</p>
-                          </div>
-                        </a>
-                      </div>
+                </a>
+                <a href="" class="github">
+                  <div class="botao">
+                    <img src="./assets/github.png" alt="">
+                    <p>Contato</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-  
-            <div id="projeto-glass" class="projetos__card">
-  
-              <div class="card-img">
-                <a href="#" target="_blank">
-                  <img src="./assets/glass.jpg" alt="Imagem representando meu projeto número 1" class="projeto-img"/>
+
+            <div class="conteudo-card" id="goole-glass">
+              <div class="projeto-card">
+                <div class="card-img">
+                  <a href="">
+                    <img src="./assets/android.jpg" alt="">
+                  </a>
+                </div>
+                <h2>Projeto Google-Glass
+              </div>
+              <div class="card-texto">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
+              </div>
+              <div class="card-footer">
+                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
+               
+              </div>
+              <div class="flex-button">
+                <a href="" class="link-botao">
+                  <div class="botao">
+                    <img src="./assets/link.png" alt="">
+                    <p>Contato</p>
+                  </div>
                 </a>
-                
+                <a href="" class="github">
+                  <div class="botao">
+                    <img src="./assets/github.png" alt="">
+                    <p>Contato</p>
+                  </div>
+                </a>
               </div>
-              <h2>Projeto Google Glass</h2>
-              
-  
-              <div class="card-flex">
-                <div class="card-text">
-                  <p>
-                     Meu primeiro projeto desenvolvido a partir do curso de HTML E CSS do Curso em Video com o professor Guanabara. Este curso é de 2013, foi quando voltei a ter contato com o mundo da tecnologia. Apesar do design do site ser bem retro, e não possuir responsividade, neste projeto foi estudado praticamente todos os conceitos de HTML e CSS na época. També a conceitos em Javascript usados para a  interação.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
-                    <div class="flex-button">
-                      <a href="https://crisdev83.github.io/projetoGoogleGlass/" target="_blank"
-                        >
-                        <div class="projetos__card-button">
-                          <img src="./assets/link.png" alt="">
-                        Visualizar
-                        </div>
-                      </a>
-                      <a href="https://github.com/CrisDev83/projetoGoogleGlass.git" target="_blank"
-                        >
-                        <div class="principal__botao-github">
-                          <img src="./assets/github.png" alt="" />
-                          <p>Github</p>
-                        </div>
-                      </a>
-                    </div>
-                </div>
-              </div>
-  
             </div>
           </div>
-
+          
         </div>
 
       </section>
-
-      
+    
     </main>
 
-    <div class="footer">
-      <footer>
-        <p>Desenvolvido com muito <img src="./assets/heart.png" alt="Ícone de coração"> por</p><a href="#" target="_blank"><span> Cris Vieira</span></a>
-      </footer>
-    </div>
-
-    <script src="./js/script.js" type="module"></script>
-    <script src="./js/modules/vanilla-tilt.min.js"></script>
+    <footer>
+      <p>Desenvolvido com muito &#x1F4AA por <a href="">Cris Vieira</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
