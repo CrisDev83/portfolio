@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 
 .flex-button {
   width: 100%;
@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 20px;
 
 
 }
@@ -18,7 +19,7 @@
 
 
 .botao {
-  width: 10rem;
+  width: 6rem;
   height: 3.2rem;
   border-radius: 6px;
   display: flex;
