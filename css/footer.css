@@ -1,0 +1,25 @@
+
+
+footer {
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  footer p {
+    text-align: center;
+    width: 60%;
+  }
+  
+  footer a {
+    color:  #00fffb;
+  }
+  
+  footer a:hover {
+    color: rgba(101, 24, 180, 1);
+  }
+  

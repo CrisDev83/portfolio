@@ -1,7 +1,7 @@
-@media (max-width:600px) {
+
 
 :root {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   font-size: 100%;
 
@@ -28,6 +28,7 @@
 
 
 body {
+
   background-color: var(--fundo-body);
   font-family: var(--font-body);
   letter-spacing: 1px;
@@ -45,7 +46,7 @@ a {
 
 h1 {
 color: var(--cor-texto-main);
-font-size: 1.1rem;
+font-size: 1.6rem;
 margin: 1.5rem 0;
 text-transform: uppercase;
 text-align: center;
@@ -73,7 +74,15 @@ font-weight: bold;
 line-height: 24px;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #272727;
+}
 
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color:var(--cor-nome-span) ;
+  border-radius: 8px;
 }
 
 

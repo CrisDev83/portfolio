@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/footer.css">
     
   </head>
 
@@ -42,39 +43,46 @@
     </header>
 
     <main>
+
       <section id="home">
 
-        <div class="conteudo">
-          <div id="home-esquerda">
+        <div class="container">
+
+          <div class="content-left">
+
             <div class="home-texto">
               <h1>Olá, eu sou</h1>
               <div class="home-animacao">
                 <span class="home-nome">CRIS VIEIRA</span>
-                <span class="home-cursor"></span>
+                
               </div>
               <h1>Desenvolvedor front-end</h1>
+              
             </div>
-            
+
+            <div class="flex-button">
+              <a href="" class="linkedin">
+                <div class="botao">
+                  <img src="./assets/linkedin.png" alt="">
+                  <p>LinkedIn</p>
+                </div>
+              </a>
+              <a href="" class="github">
+                <div class="botao">
+                  <img src="./assets/github.png" alt="">
+                  <p>Contato</p>
+                </div>
+              </a>
+            </div>
 
           </div>
-          <div class="flex-button">
-            <a href="" class="linkedin">
-              <div class="botao">
-                <img src="./assets/linkedin.png" alt="">
-                <p>LinkedIn</p>
-              </div>
-            </a>
-            <a href="" class="github">
-              <div class="botao">
-                <img src="./assets/github.png" alt="">
-                <p>Contato</p>
-              </div>
-            </a>
-          </div>
-          <div id="home-direita">
+          
+          <div class="content-right">
             <img src="./assets/developer.svg" alt="">
           </div>
+
         </div>
+
         <div class="scroll">
           <a href="" class="link-scroll">
             <p>scroll down</p>
@@ -85,30 +93,20 @@
       </section>
 
       <section id="sobre">
-        <div class="conteudo">
-          <div class="sobre-esquerda">
+
+        <div class="container">
+
+          <div class="content-left">
           
-              <div class="sobre-foto">
+              <div class="container-foto">
                 <img src="./assets/family.jpg" alt="" class="foto">
               </div>
+              
        
           </div>
-          <div class="flex-button">
-            <a href="" class="download">
-              <div class="botao">
-                <img src="./assets/download-da-nuvem.png" alt="">
-                <p>Currículo</p>
-              </div>
-            </a>
-            <a href="" class="contato">
-              <div class="botao">
-                <img src="./assets/whatsapp.png" alt="">
-                <p>Contato</p>
-              </div>
-            </a>
-          </div>
+          
 
-          <div class="sobre-direita">
+          <div class="content-right">
     
               <h1>sobre mim</h1>
               <h2>Brusque, Santa Catarina</h2>
@@ -116,6 +114,20 @@
               </p>
               <p>Sempre fui apaixanado por tecnologia, sou da geração que viu nascer os primeiros games, computadores e sonhava em trabalhar na área. O primeiro curso que fiz, foi de MS-DOS('pois é faz tempo...rsrsr'). Porém outra paixão entrou na minha vida, a música, e fiz a minha escolha. Hoje reencontrei o gosto pela tecnologia. Estudo programação autodidaticamente através de cursos online a 3 anos. Venho também desenvolvendo alguns projetos como freelancer e dando "vida" para idéias próprias de aplicações que a muito tempo estavam guardadas. 
               </p>
+              <div class="flex-button">
+                <a href="" class="download">
+                  <div class="botao">
+                    <img src="./assets/download-da-nuvem.png" alt="">
+                    <p>Currículo</p>
+                  </div>
+                </a>
+                <a href="" class="contato">
+                  <div class="botao">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>Contato</p>
+                  </div>
+                </a>
+              </div>
       
           </div>
          
@@ -123,9 +135,11 @@
       </section>
 
       <section id="experiencia">
-        <h1>experiência</h1>
-        <div class="conteudo">
-          <div class="experiencia-esquerda">
+      
+        <div class="container">
+
+          <div class="content-left">
+            <h1>experiência</h1>
             <article class="lugares">
               <ul>
                 <li>&#128064&#128064</li>
@@ -134,13 +148,14 @@
               </ul>
             </article>
           </div>
-          <div class="experiencia-direita">
-            <article class="descricao">
+
+          <div class="content-right">
+            <article class="descricao" id="emprego">
                 <h2>Em busca da minha primeira experiência "oficial" :)</h2>
                 <p class="link">Quem sabe na sua empresa?</p>
                 <p class="colorFone">Estou disponível para bater um papo, você pode entrar em contato via whatsapp: <a href="" class="link">(47) 99254-1243</a> ou via e-mail: <a href="" class="link">cristhian.dev83@gmail.com</a> &#10024</p>
             </article>
-            <article class="descricao">
+            <article class="descricao" id="casa-verde">
               <h2>Desenvolvedor Front-End</h2>
               <span>Maio 2022 - Atual</span>
               <p class="link">Casa Verde Preservação Compartilhada - Projeto Freelancer</p>
@@ -148,7 +163,7 @@
               Minha primeira oportunidade na área da tecnologia. É uma StartUp disruptiva ('adoro idéias disruptivas...') que tem uma visão inovadora a respeito da preservação. Gostei tanto da idéia que aceitei trabalhar sem remunerçao em troca de equity quando o projeto for lançado. Sou responsável pelo Front-end da aplicação desenlvolvido em ReactJS, assim como a integração com o Back-end. Projeto esta em fase final de desenvolvimento.
               </p>
             </article>
-            <article class="descricao">
+            <article class="descricao" id="musicart">
               <h2>Educador Musical</h2>
               <span>Mar 2011 - Jul 2019</span>
               <p class="link">Programa Musicart e Cidadania</p>
@@ -165,11 +180,11 @@
 
         <h1>Projetos</h1>
 
-        <div class="conteudo-projetos">
+        <div class="container">
 
-          <div class="duplas-projetos">
+          <div class="flex-projetos">
 
-            <div class="conteudo-card" id="proffy">
+            <div class="content-card" id="proffy">
               <div class="projeto-card">
                 <div class="card-img">
                   <a href="">
@@ -201,7 +216,7 @@
               </div>
             </div>
 
-            <div class="conteudo-card" id="ecoleta">
+            <div class="content-card" id="ecoleta">
               <div class="projeto-card">
                 <div class="card-img">
                   <a href="">
@@ -235,15 +250,48 @@
 
           </div>  
 
-          <div class="duplas-projetos">
-            <div class="conteudo-card" id="cordel">
+          <div class="flex-projetos">
+
+            <div class="content-card" id="proffy">
               <div class="projeto-card">
                 <div class="card-img">
                   <a href="">
-                    <img src="./assets/cordel.png" alt="">
+                    <img src="./assets/proffy.png" alt="">
                   </a>
                 </div>
-                <h2>Projeto Cordel</h2>
+                <h2>Projeto Proffy</h2>
+              </div>
+              <div class="card-texto">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
+              </div>
+              <div class="card-footer">
+                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
+               
+              </div>
+              <div class="flex-button">
+                <a href="" class="link-botao">
+                  <div class="botao">
+                    <img src="./assets/link.png" alt="">
+                    <p>Visualizar</p>
+                  </div>
+                </a>
+                <a href="" class="github">
+                  <div class="botao">
+                    <img src="./assets/github.png" alt="">
+                    <p>Contato</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="content-card" id="ecoleta">
+              <div class="projeto-card">
+                <div class="card-img">
+                  <a href="">
+                    <img src="./assets/ecoleta.png" alt="">
+                  </a>
+                </div>
+                <h2>Projeto Ecoleta</h2>
               </div>
               <div class="card-texto">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
@@ -268,106 +316,10 @@
               </div>
             </div>
 
-            <div class="conteudo-card" id="flap">
-              <div class="projeto-card">
-                <div class="card-img">
-                  <a href="">
-                    <img src="./assets/flappy.png" alt="">
-                  </a>
-                </div>
-                <h2>Jogo Flap-Bird
-              </div>
-              <div class="card-texto">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
-              </div>
-              <div class="card-footer">
-                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
-               
-              </div>
-              <div class="flex-button">
-                <a href="" class="link-botao">
-                  <div class="botao">
-                    <img src="./assets/link.png" alt="">
-                    <p>Contato</p>
-                  </div>
-                </a>
-                <a href="" class="github">
-                  <div class="botao">
-                    <img src="./assets/github.png" alt="">
-                    <p>Contato</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="duplas-projetos">
-
-            <div class="conteudo-card" id="android">
-              <div class="projeto-card">
-                <div class="card-img">
-                  <a href="">
-                    <img src="./assets/android.jpg" alt="">
-                  </a>
-                </div>
-                <h2>Projeto Android
-              </div>
-              <div class="card-texto">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
-              </div>
-              <div class="card-footer">
-                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
-               
-              </div>
-              <div class="flex-button">
-                <a href="" class="link-botao">
-                  <div class="botao">
-                    <img src="./assets/link.png" alt="">
-                    <p>Contato</p>
-                  </div>
-                </a>
-                <a href="" class="github">
-                  <div class="botao">
-                    <img src="./assets/github.png" alt="">
-                    <p>Contato</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="conteudo-card" id="goole-glass">
-              <div class="projeto-card">
-                <div class="card-img">
-                  <a href="">
-                    <img src="./assets/android.jpg" alt="">
-                  </a>
-                </div>
-                <h2>Projeto Google-Glass
-              </div>
-              <div class="card-texto">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, blanditiis perspiciatis nam temporibus, voluptatum dolorum eos porro, laborum aperiam assumenda nostrum voluptas enim. Porro provident perferendis sunt. Asperiores, at labore!</p>
-              </div>
-              <div class="card-footer">
-                <span>Tecnologias usadas no projeto: HTML5, CSS3, JavaScript.</span>
-               
-              </div>
-              <div class="flex-button">
-                <a href="" class="link-botao">
-                  <div class="botao">
-                    <img src="./assets/link.png" alt="">
-                    <p>Contato</p>
-                  </div>
-                </a>
-                <a href="" class="github">
-                  <div class="botao">
-                    <img src="./assets/github.png" alt="">
-                    <p>Contato</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+          </div>  
           
+
+        
         </div>
 
       </section>
