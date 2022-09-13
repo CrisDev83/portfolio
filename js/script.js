@@ -8,20 +8,6 @@ function toggleMenu(){
 btnMobile.addEventListener('click', toggleMenu);
 
 
-function typeWriter(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    textoArray.forEach((letra, i) => {
-        setTimeout(() => {
-            elemento.innerHTML += letra;
-        }, 200 * i)
-    });
-}
-
-const title = document.querySelector('span.home-nome');
-
-typeWriter(title);
-
 
 const menuItems = document.querySelectorAll('#menu a');
 
@@ -47,4 +33,54 @@ function scrollToPosition(to) {
         behavior: "smooth"
       })
 }
+
+
+function initTyping() {
+    let letter = 0;
+    const text = '     Cris Vieira';
+
+    function typeWriter() {
+        if(letter < text.length) {
+            document.querySelector(".home-nome").innerHTML += text.charAt(letter);
+            letter++;
+            setTimeout(typeWriter, 180)
+        }
+    }
+
+    typeWriter();
+}
+  
+initTyping();
+
+
+function initTabNav() {
+    const tabMenu = document.querySelectorAll("[data-tab='menu'] li");
+    const tabContent = document.querySelectorAll("[data-tab='content'] article");
+  
+    if (tabMenu.length && tabContent.length) {
+      tabMenu[1].classList.add("active");
+      tabContent[1].classList.add("active");
+  
+      function activeTab(index) {
+        tabContent.forEach((content) => {
+          content.classList.remove("active");
+        });
+        const direction = tabContent[index].dataset.anime;
+        tabContent[index].classList.add("active", direction);
+  
+        tabMenu.forEach((content) => {
+          content.classList.remove("active");
+        });
+        tabMenu[index].classList.add("active");
+      }
+  
+      tabMenu.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          activeTab(index);
+        });
+      });
+    }
+  }
+
+  initTabNav();
 

@@ -23,23 +23,32 @@
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: .5rem;
+  text-transform: uppercase;
 }
 
-.content-left .home-texto .home-nome::after {
-  content:'|';
-  margin-left: 5px;
-  opacity: 1;
-  color: white;
-  animation: blink 1s infinite;
+.content-left .home-texto .home-cursor {
+  width: 3px;
+    height: 42px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    animation: blink 0.6s infinite alternate;
 } 
 
 
 
 @keyframes blink {
-  0%, 100% {
+  0% {
     opacity: 1;
   }
-  50% {
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
@@ -138,6 +147,14 @@
   border-left: 3px solid #272727;
   cursor: pointer;
   transition: 400ms;
+  transition: background-color 0.5s ease;
+
+}
+
+#experiencia .lugares ul li.active {
+  background-color: #151515;
+  border-left: 3px solid #4863F7;
+  font-weight: 600;
 
 }
 
@@ -158,20 +175,49 @@
   justify-content: center;
   text-align: left;
   flex:2;
+  margin-bottom: 1rem;
 }
 
-#experiencia .content-right .descricao {
+#experiencia .content-right .show-right {
   padding: 2rem;
   margin-bottom: 1rem;
 }
 
-#experiencia .content-right .descricao  > .link {
+#experiencia .content-right .show-right   > .link {
   margin: 2rem 0;
   text-indent: 0;
 } 
 
-#experiencia .content-right article#musicart, article#casa-verde {
+#experiencia .content-right article {
   display: none;
+}
+
+#experiencia .content-right article.active{
+  display: block;
+  animation: 0.5s forwards show-right;
+}
+
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 #projetos {
@@ -189,7 +235,6 @@
   display: flex;
   align-items: center;
   column-gap: 3rem;
-  padding-bottom: 4rem;
   justify-content: space-between;
 
 }
@@ -199,6 +244,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 1rem;
 
 }
 
@@ -240,151 +286,4 @@
   justify-content: flex-start;
   column-gap: 4rem;
 }
-
-
-@media (max-width: 600px){
-
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  #home .content-right {
-    display: none;
-  }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.content-left .home-texto .home-nome {
-
-  width: 20rem;
-  display: block;
-  font-size: 2rem;
-}
-
-#home .flex-button, #sobre .flex-button {
-  column-gap: 4rem;
-}
-
-
-#sobre .container-foto img {
-  width: 200px;
-  text-align: center;
-  margin: 0 auto;
-  
-
-}
-
-#sobre .content-left {
-  flex: 0;
-  margin: 1rem auto;
-
-}
-
-#sobre .content-right {
-  margin:0;
-  padding: 0;
-  text-align: left;
-  display: block;
-  width:100%;
-
-}
-
-#sobre .content-right p {
-  font-size: .8rem;
-}
-
-#sobre .content-right h1 {
-  text-align: center;
-}
-
-#sobre .content-right h2 {
-  font-size: 1rem;
-}
-
-#experiencia .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 1rem 0;
-
-}
-
-#experiencia .content-left {
-  margin: 0;
-  padding: 1rem 0;
-  width: 100%;
-
-}
-
-#experiencia .content-right {
-  width: 100%;
-}
-
-#experiencia .content-right h2 {
-  font-size: 1rem;
-}
-
-#experiencia .content-right .descricao {
-  padding: 1rem 0;
-  margin: 0;
-
-}
-
-#experiencia .content-right p {
-  font-size: .8rem;
-}
-
-
-#projetos .container {
-  width: 100%;
-}
-
-#projetos .flex-projetos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-#projetos .projeto-card .card-img{
-  text-align: center;
-}
-
-#projetos .projeto-card h2 {
-  text-align: center;
-  font-size: 1rem;
-}
-
-#projetos .container .flex-projetos .content-card .card-texto {
-  padding: 0 2rem;
-  padding-bottom:2rem;
-
-}
-
-#projetos .content-card .card-texto p {
-  font-size: 0.8rem;
-
-}
-
-#projetos .container .flex-projetos .content-card .card-footer span {
-  
-  padding: 0 2rem;
-
-}
-
-#projetos .container .flex-projetos .content-card .flex-button {
-  display: flex;
-  justify-content: center;
-
-}
-}
-
 
