@@ -82,7 +82,7 @@
 }
 
 .content-right img:hover {
-  animation: swing 1s infinite alternate;
+  animation: swing 2s infinite alternate;
 }
 
 .scroll {

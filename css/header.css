@@ -168,6 +168,11 @@
     top: -10px;
   }
 
+  #menu a:hover::after {
+    width: 0;
+  
+  }
+
 
 }
 

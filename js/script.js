@@ -15,10 +15,7 @@ function toggleMenu(){
 }
 
 
-
 btnMobile.addEventListener('click', toggleMenu);
-
-
 
 const menuItems = document.querySelectorAll('#menu a');
 
@@ -60,7 +57,7 @@ function initTyping() {
 
     typeWriter();
 }
-  
+
 initTyping();
 
 
@@ -92,6 +89,6 @@ function initTabNav() {
       });
     }
   }
-
+  
   initTabNav();
 
