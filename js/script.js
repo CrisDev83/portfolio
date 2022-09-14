@@ -1,9 +1,20 @@
 const btnMobile = document.getElementById('btn-mobile')
 
 function toggleMenu(){
-    const nav =document.getElementById('nav')
-    nav.classList.toggle('active')
+    let nav =document.getElementById('nav')
+  if(nav.classList.contains('active')) {
+    nav.classList.remove('active')
+  } else {
+    nav.classList.add('active')
+  }
+
+  setTimeout(() => {
+    nav.classList.remove('active')
+  }, 5000)
+ 
 }
+
+
 
 btnMobile.addEventListener('click', toggleMenu);
 
