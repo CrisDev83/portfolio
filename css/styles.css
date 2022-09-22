@@ -258,22 +258,28 @@
 
 #projetos .flex-projetos {
   display: flex;
-  align-items: center;
+  align-items: top;
   column-gap: 3rem;
   justify-content: space-between;
 }
 
 #projetos .container .flex-projetos .content-card {
   display: flex;
+  width: 50%;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-bottom: 1rem;
+
+
+
 }
 
 #projetos .container .flex-projetos .content-card .projeto-card {
   display: flex;
   flex-direction: column;
+
+
 }
 
 #projetos
@@ -290,6 +296,8 @@
   margin-bottom: 1rem;
   border-left: 5px solid #00d2df;
   transition: 400ms;
+  height: 200px;
+
 }
 
 #projetos
@@ -305,8 +313,11 @@
 }
 
 #projetos .container .flex-projetos .content-card .card-texto {
+  width: 100%;
+  display: block;
   padding-right: 8rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 #projetos .container .flex-projetos .content-card .card-footer span {
