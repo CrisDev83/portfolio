@@ -1,34 +1,31 @@
 
 @media (max-width: 600px){
 
-    h1 {
+  h1 {
       font-size: 1.2rem;
-    }
+  }
   
-    #home .content-right {
+  #home .content-right {
       display: none;
-    }
+  }
   
-    .container {
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    }
-  
-  
-    .content-left .home-texto .home-nome {
+  }
+
+  .content-left .home-texto .home-nome {
   
       width: 20rem;
       display: block;
       font-size: 2rem;
       display: inline;
   
-    }
+  }
   
-  
-  
-    .content-left .home-texto .home-cursor {
+  .content-left .home-texto .home-cursor {
         width: 3px;
         height: 30px;
         background-color: white;
@@ -36,133 +33,139 @@
         position: relative;
         top: 3px;
         animation: blink 0.6s infinite alternate;
-    } 
+  } 
   
-    #home .flex-button, #sobre .flex-button {
+  #home .flex-button, #sobre .flex-button {
       column-gap: 4rem;
-    }
+  }
   
-  
-    #sobre .container-foto img {
+  #sobre .container-foto img {
       width: 200px;
       text-align: center;
       margin: 0 auto;
       
   
-    }
+  }
   
-    #sobre .content-left {
+  #sobre .content-left {
       flex: 0;
       margin: 1rem auto;
   
-    }
+  }
   
-    #sobre .content-right {
+  #sobre .content-right {
       margin:0;
       padding: 0;
       text-align: left;
       display: block;
       width:100%;
   
-    }
+  }
   
-    #sobre .content-right p {
+  #sobre .content-right p {
       font-size: .8rem;
-    }
+  }
   
-    #sobre .content-right h1 {
+  #sobre .content-right h1 {
       text-align: center;
-    }
+  }
   
-    #sobre .content-right h2 {
+  #sobre .content-right h2 {
       font-size: 1rem;
-    }
+  }
   
-    #experiencia .container {
+  #experiencia .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0 auto;
       padding: 1rem 0;
   
-    }
+  }
   
-    #experiencia .content-left {
+  #experiencia .content-left {
       margin: 0;
       padding: 1rem 0;
       width: 100%;
   
-    }
+  }
   
-    #experiencia .content-right {
+  #experiencia .content-right {
       width: 100%;
-    }
+  }
   
-    #experiencia .content-right h2 {
+  #experiencia .content-right h2 {
       font-size: 1rem;
-    }
+  }
   
-    #experiencia .content-right .descricao {
+  #experiencia .content-right .descricao {
       padding: 1rem 0;
       margin: 0;
   
-    }
+  }
   
-    #experiencia .content-right p {
+  #experiencia .content-right p {
       font-size: .8rem;
-    }
+  }
+
+  #projetos .flex-projetos {
+    display: block;
+  }
+
+  #projetos .container .flex-projetos .content-card {
+    width: 100%;
+
+  }
+
+  #projetos .container .flex-projetos .content-card .projeto-card {
+    align-items: center;
+    text-align: center;
+  }
+
+  #projetos .container .flex-projetos .content-card .projeto-card .card-img {
+    margin-bottom: .5rem;
+  }
   
+
+  #projetos
+    .container
+    .flex-projetos
+    .content-card
+    .projeto-card
+    .card-img a img {
+    padding: 0;  
+    margin: 0 auto;  
+    width: 90%;
+    height: 150px;
+
+  }
+   
+  #projetos .container .flex-projetos .content-card .card-texto {
+    padding-right: 0px;
+  }
   
-    #projetos .container {
-      width: 100%;
-    }
+  #projetos .content-card .card-texto p {
+    font-size: 0.8rem;
   
-    #projetos .flex-projetos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  }
   
-    }
+  #projetos .container .flex-projetos .content-card .card-footer span {
+    border: 2px solid red;
+    padding-right: 0;
+  }
   
-    #projetos .projeto-card .card-img{
-      text-align: center;
-    }
+  #projetos .container .flex-projetos .content-card .flex-button {
+    display: flex;
+    justify-content: center;
   
-    #projetos .projeto-card h2 {
-      text-align: center;
-      font-size: 1rem;
-    }
-  
-    #projetos .container .flex-projetos .content-card .card-texto {
-      padding: 0 2rem;
-      padding-bottom:2rem;
-  
-    }
-  
-    #projetos .content-card .card-texto p {
-      font-size: 0.8rem;
-  
-    }
-  
-    #projetos .container .flex-projetos .content-card .card-footer span {
-      
-      padding: 0 2rem;
-  
-    }
-  
-    #projetos .container .flex-projetos .content-card .flex-button {
-      display: flex;
-      justify-content: center;
-  
-    }
+  }
 
       
-    footer p {
-        text-align: center;
-        width: 60%;
-        font-size: 0.8rem;
-    }
+  footer p {
+    text-align: center;
+    width: 60%;
+    font-size: 0.8rem;
+  }
 
 }
   
