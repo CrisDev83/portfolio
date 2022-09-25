@@ -267,18 +267,13 @@
   display: flex;
   width: 50%;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
-
-
-
 }
 
 #projetos .container .flex-projetos .content-card .projeto-card {
   display: flex;
   flex-direction: column;
-
 
 }
 
