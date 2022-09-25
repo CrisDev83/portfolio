@@ -4,6 +4,10 @@
   h1 {
       font-size: 1.2rem;
   }
+
+  p {
+    font-size: 0.9rem;
+  }
   
   #home .content-right {
       display: none;
@@ -103,10 +107,6 @@
       margin: 0;
   
   }
-  
-  #experiencia .content-right p {
-      font-size: .8rem;
-  }
 
   #projetos .flex-projetos {
     display: block;
@@ -143,14 +143,8 @@
   #projetos .container .flex-projetos .content-card .card-texto {
     padding-right: 0px;
   }
-  
-  #projetos .content-card .card-texto p {
-    font-size: 0.8rem;
-  
-  }
-  
+    
   #projetos .container .flex-projetos .content-card .card-footer span {
-    border: 2px solid red;
     padding-right: 0;
   }
   
